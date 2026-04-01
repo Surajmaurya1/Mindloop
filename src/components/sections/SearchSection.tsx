@@ -4,17 +4,17 @@ import { fadeUp } from "@/lib/animations";
 const platforms = [
   {
     name: "ChatGPT",
-    icon: "https://placehold.co/200x200/10a37f/ffffff?text=GPT",
+    icon: "https://cdn.simpleicons.org/chatgpt/ffffff",
     description: "AI-driven conversations that reshape how we find information and synthesize knowledge in real time."
   },
   {
     name: "Perplexity",
-    icon: "https://placehold.co/200x200/262626/ffffff?text=PPX",
+    icon: "https://cdn.simpleicons.org/perplexity/ffffff",
     description: "Answers are delivered directly with verifiable sources, bypassing the traditional link-clicking experience."
   },
   {
     name: "Google AI",
-    icon: "https://placehold.co/200x200/4285f4/ffffff?text=Goog",
+    icon: "https://cdn.simpleicons.org/google/ffffff",
     description: "Search generative experiences summarize extensive web content into a singular, unified overview instantly."
   }
 ];
@@ -48,12 +48,12 @@ export default function SearchSection() {
               className="flex flex-col items-center text-center group"
               {...fadeUp(0.3 + (idx * 0.1))}
             >
-              <div className="w-[200px] h-[200px] rounded-2xl overflow-hidden mb-8 bg-secondary border border-border/50 relative">
+              <div className="w-[180px] h-[180px] rounded-2xl overflow-hidden mb-8 bg-secondary/40 border border-border/50 relative flex items-center justify-center">
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
                 <img 
                   src={platform.icon} 
                   alt={`${platform.name} icon`}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                  className="w-20 h-20 object-contain opacity-90 group-hover:scale-110 group-hover:opacity-100 transition-all duration-700" 
                 />
               </div>
               <h3 className="font-semibold text-base mb-3 text-foreground/90">{platform.name}</h3>

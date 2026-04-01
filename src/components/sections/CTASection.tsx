@@ -36,7 +36,7 @@ export default function CTASection() {
   }, []);
 
   return (
-    <section className="relative w-full overflow-hidden py-32 md:py-52 border-t border-border/30 flex items-center justify-center">
+    <section className="relative w-full overflow-hidden pt-32 pb-20 md:pt-52 md:pb-24 border-t border-border/30 flex items-center justify-center">
       
       {/* Background HLS Video */}
       <video

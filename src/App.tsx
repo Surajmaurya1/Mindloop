@@ -15,9 +15,9 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-background text-foreground bg-black w-full overflow-x-hidden selection:bg-foreground/20 selection:text-foreground">
+    <div className="min-h-screen flex flex-col bg-background text-foreground bg-black w-full overflow-x-hidden selection:bg-foreground/20 selection:text-foreground">
       <Navbar />
-      <main>
+      <main className="flex-1">
         <HeroSection />
         <SearchSection />
         <MissionSection />

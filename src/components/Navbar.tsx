@@ -15,7 +15,9 @@ export default function Navbar() {
             <div className="relative flex items-center justify-center w-7 h-7 rounded-full border-2 border-foreground/60">
               <div className="w-3 h-3 rounded-full border border-foreground/60" />
             </div>
+        
             <span className="font-bold text-xl tracking-tight">Mindloop</span>
+          
           </div>
 
           {/* Center-left: Nav links */}

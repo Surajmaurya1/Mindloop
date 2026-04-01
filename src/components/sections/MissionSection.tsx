@@ -38,7 +38,7 @@ export default function MissionSection() {
         </motion.div>
 
         {/* Scroll Reveal Text container */}
-        <div ref={containerRef} className="max-w-4xl text-center space-y-10">
+        <div ref={containerRef} className="relative max-w-4xl text-center space-y-10">
           
           <p className="text-2xl md:text-4xl lg:text-5xl font-medium tracking-tight md:tracking-[-1px] leading-tight md:leading-tight">
             {p1Words.map((word, i) => {

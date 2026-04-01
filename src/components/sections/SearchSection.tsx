@@ -4,18 +4,21 @@ import { fadeUp } from "@/lib/animations";
 const platforms = [
   {
     name: "ChatGPT",
-    icon: "https://cdn.simpleicons.org/chatgpt/ffffff",
-    description: "AI-driven conversations that reshape how we find information and synthesize knowledge in real time."
+    icon: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
+    description: "AI-driven conversations that reshape how we find information and synthesize knowledge in real time.",
+    invert: true
   },
   {
     name: "Perplexity",
     icon: "https://cdn.simpleicons.org/perplexity/ffffff",
-    description: "Answers are delivered directly with verifiable sources, bypassing the traditional link-clicking experience."
+    description: "Answers are delivered directly with verifiable sources, bypassing the traditional link-clicking experience.",
+    invert: false
   },
   {
     name: "Google AI",
     icon: "https://cdn.simpleicons.org/google/ffffff",
-    description: "Search generative experiences summarize extensive web content into a singular, unified overview instantly."
+    description: "Search generative experiences summarize extensive web content into a singular, unified overview instantly.",
+    invert: false
   }
 ];
 
@@ -54,6 +57,7 @@ export default function SearchSection() {
                   src={platform.icon} 
                   alt={`${platform.name} icon`}
                   className="w-20 h-20 object-contain opacity-90 group-hover:scale-110 group-hover:opacity-100 transition-all duration-700" 
+                  style={platform.invert ? { filter: "brightness(0) invert(1)" } : undefined}
                 />
               </div>
               <h3 className="font-semibold text-base mb-3 text-foreground/90">{platform.name}</h3>

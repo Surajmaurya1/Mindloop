@@ -6,15 +6,15 @@ export default function HeroSection() {
     <section id="home" className="relative w-full h-screen overflow-hidden flex flex-col items-center justify-center">
       {/* Background Video */}
       <video
-        className="absolute inset-0 w-full h-full object-cover -z-10 opacity-70"
-        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260325_120549_0cd82c36-56b3-4dd9-b190-069cfc3a623f.mp4"
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-70"
+        src="/background.mp4"
         autoPlay
         loop
         muted
         playsInline
       />
       {/* Bottom Gradient Fade */}
-      <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-background to-transparent z-0 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-background to-transparent z-[1] pointer-events-none" />
 
       {/* Content Container */}
       <div className="relative z-10 flex flex-col items-center text-center px-4 pt-28 md:pt-32 max-w-4xl mx-auto w-full">
